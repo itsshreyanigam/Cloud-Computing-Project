@@ -1,0 +1,558 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background-color: #2c3531;
+}
+
+.header {
+  width: 100%;
+  height: 4rem;
+  background-color: #0e4849;
+  display: flex;
+  font-family: 'DM Serif Display', serif;
+}
+
+.left-header {
+  width: 50%;
+  color: #d1e8e2;
+  letter-spacing: 0.3px;
+  padding: 25px;
+  margin-left: 10px;
+  margin-top: -0.5rem;
+}
+
+.right-header {
+  width: 50%;
+  padding: 25px;
+  margin-left: 60px;
+  margin-left: 100px;
+  margin-top: -0.5rem;
+}
+
+.header-ul li {
+  list-style: none;
+  display: inline;
+  margin-left: 22px;
+  color: #d1e8e2;
+  font-size: 18px;
+}
+
+.header-ul-right li {
+  list-style: none;
+  display: inline;
+  margin-left: 20px;
+}
+
+.contact,
+.fa-file-export {
+  color: #d1e8e2;
+  font-size: 20px;
+}
+
+.fa-twitter,
+.fa-download,
+.fa-file-export,
+.fa-facebook-f,
+.fa-file-zipper,
+.fa-youtube,
+.fa-instagram {
+  color: #d1e8e2;
+}
+
+.fa-twitter:hover,
+.fa-download:hover,
+.fa-file-export:hover,
+.contact:hover,
+.fa-facebook-f:hover,
+.fa-file-zipper:hover,
+.fa-youtube:hover,
+.fa-instagram:hover{
+  color: #ffcb9a;
+}
+
+.menubar {
+  width: 100%;
+  height: 125px;
+  display: flex;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0px;
+  background-color: #d1e8e2;
+  z-index: 99;
+}
+li {
+  float: left;
+}
+li a, .dropbtn {
+  display: inline-block;
+}
+li.dropdown {
+  display: inline-block;
+}
+.dropdown li {
+  float: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2c3531;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 1rem;
+}
+
+.dropdown-content a {
+  color: #d1e8e2;
+  padding: 12px 15px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 17px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.dropdown-content a:hover {background-color: #464d4a; color: #d9b08c;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.left-menubar {
+  width: 35%;
+}
+
+.right-menubar {
+  width: 70%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.logo {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.nav-link {
+  padding: 20px 0px;
+  margin: 0px 8px;
+  display: inline-block;
+  position: relative;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #d9b08c;
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 100%;
+}
+
+.menulist li,
+.nav-link {
+  list-style: none;
+  display: inline;
+  text-decoration: none;
+  color: #2c3531;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-family: 'DM Serif Display', serif;
+}
+
+.menulist li,
+.nav-link:hover {
+  color: #116466;
+}
+
+#main-img {
+  width: 100%;
+}
+
+.slideshow-container {
+  max-width: 99%;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+ 
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.movingtext {
+  width: 100%;
+  height: 30px;
+  background-color: #0e4849;
+  display: flex;
+}
+
+.moving-left {
+  width: 10%;
+}
+
+.moving-middle {
+  width: 80%;
+}
+
+.moving-right {
+  width: 10%;
+}
+
+.moving-line {
+  color: #d1e8e2;
+  font-size: 20px;
+}
+
+.highlight {
+  color: #ffcb9a;
+}
+
+#about-college {
+  width: 100%;
+  height: 430px;
+  display: flex;
+  margin-top: 30px;
+}
+
+.about-left {
+  width: 7%;
+}
+
+.about-center {
+  width: 60%;
+}
+
+.about-right {
+  width: 24%;
+  margin-left: 30px;
+  overflow: scroll;
+}
+
+.about-rightlast {
+  width: 10%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#aboutus {
+  font-size: 30px;
+  color: #d9b08c;
+  padding: 15px;
+  font-family: 'DM Serif Display', serif;
+}
+
+.text {
+  color: #d1e8e2;
+  font-size: 20px;
+  font-weight: lighter;
+  padding: 10px;
+  padding-right: 30px;
+  font-family: 'Cormorant', serif;
+}
+
+.fa-building-columns {
+  font-size: 25px;
+}
+
+.innertext {
+  color: #d1e8e2;
+  font-size: 20px;
+  padding: 10px;
+  font-family: 'Cormorant', serif;
+}
+
+.fa-angles-right {
+  font-size: 13px;
+  color: black;
+}
+
+.achievement {
+  color: #d9b08c;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 2dvi;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+}
+
+.fa-graduation-cap {
+  font-size: 35px;
+  margin-top: 40px;
+}
+
+.cards-list {
+  z-index: 0;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 7rem;
+}
+
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 200px;
+  border-radius: 40px;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: 'DM Serif Display', serif;
+  font-weight: 500;
+  font-size: 32px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+.course-container {
+  width: 80%;
+  height: 950px;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 440px 440px;
+  grid-gap: 30px 30px;
+  margin: auto;
+  margin-top: 50px;
+  margin-left: 2rem;
+}
+
+.course-image {
+  margin-top: 30px;
+}
+
+.course-type {
+  width: 120px;
+  height: 30px;
+  background-color: #af8a69;
+  font-size: 20px;
+  padding-left: 10px;
+  margin-top: 25px;
+  margin-left: 10px;
+  padding-top: 5px;
+  display: flex;
+  float: left;
+  font-family: 'Times New Roman', Times, serif
+}
+button > a{
+  content: "\2794";
+  color: #d1e8e2;
+  font-size: 2rem;
+  background-color: #af8a69;
+  text-decoration: none;
+}
+button{
+  margin-top: 2rem;
+  background-color: #af8a69;
+  width: 3rem;
+  transition: transform 0.3s;
+  border-radius: 10px;
+}
+button:hover{
+  transform: scale(1.1);
+}
+.course-box{
+  background-color: #0e4849;
+  width: 21rem;
+  height: 25rem;
+  border-radius: 2rem;
+  transition: transform 0.3s;
+  box-shadow: 0 10px 15px 0 rgba(105, 102, 102, 0.2), 0 26px 30px 0 rgba(173, 162, 162, 0.19);
+}
+
+.duration {
+  float: right;
+  margin-top: 2rem;
+  margin-right: 30px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #d1e8e2;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.course-heading {
+  float: clear;
+}
+
+
+.course-box:hover {
+  background-color: #116466;
+  transform: scale(1.1);
+}
+
+.footer {
+  background-color: #0e4849;
+  height: 350px;
+  margin-top: 30px;
+  display: flex;
+  }
+
+.fbox {
+  height: 240px;
+  width: 250px;
+  font-size: 20px;
+  color: #d9b08c;
+
+  margin-left: 6rem;
+
+  margin-top: 20px;
+}
+
+.fbox ul {
+  color: #d1e8e2;
+  list-style: none;
+  color: #d9b08c;
+  margin-top: 20px;
+  font-family: "Dm Serif Display", serif;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+}
+
+.list-unstyled li {
+  margin-top: 17px;
+  font-size: 19px;
+  color: #d1e8e2;
+}
+
+.list-styled li {
+  margin-top: 17px;
+  font-size: 19px;
+  color: #d1e8e2;
+  list-style-type: disc ;
+  font-family: 'Cormorant', serif;
+}
+
+.list-styled >li > a {
+  color: #d1e8e2;
+  text-decoration: none;
+}
+
+@media all and (max-width: 900px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+  .card{
+    width: 300px;
+    height: 200px;
+    margin-left: -2rem;
+  }
+  .course-box{
+    margin-left: 2rem;
+  }
+}
+
